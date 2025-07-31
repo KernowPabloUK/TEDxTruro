@@ -1,0 +1,21 @@
+#logo-image {
+    position: relative;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#hero-image{
+  background-image: url("../images/hero_image_scraped.webp");
+  min-height: 100dvh;
+}
+
+  .parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
