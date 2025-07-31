@@ -1,6 +1,7 @@
 #logo-image {
-    position: relative;
     min-height: 100dvh;
+    max-width: 100dvw;
+    object-fit: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,14 +9,18 @@
     align-items: center;
 }
 
-#hero-image{
-  background-image: url("../images/hero_image_scraped.webp");
-  min-height: 100dvh;
+#hero-image1 {
+    min-height: 100dvh;
 }
 
-  .parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#hero-image2 {
+    background-image: url("../images/hero_image_scraped.webp");
+    min-height: 100dvh;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
