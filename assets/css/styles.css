@@ -1,21 +1,103 @@
-#logo-image {
-    min-height: 100dvh;
-    max-width: 100dvw;
-    object-fit: contain;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&display=swap");
+
+/* GLOBAL */
+
+:root {
+    --inter-font: "Inter", sans-serif;
+    --inter-optical-sizing: auto;
+    --inter-weight: 300;
+    --inter-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--inter-font);
+    font-optical-sizing: var(--inter-optical-sizing);
+    font-weight: var(--inter-weight);
+    font-style: var(--inter-style);
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 85px;
+    z-index: 9999;
+    background-color: #fff;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+#nav-left-icon {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 2rem;
+    padding: 1rem;
     align-items: center;
 }
 
-#hero-image1 {
-    min-height: 100dvh;
+.nav-menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 2.5rem;
+    z-index: 10001;
 }
 
-#hero-image2 {
-    background-image: url("../images/hero_image_scraped.webp");
+.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+/* HOME */
+
+#TEDxTruro-logo-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 82%;
+    object-fit: contain;
+}
+
+#home-screen-landing-page {
+    height: 100dvh;
+    position: relative;
+}
+
+#image-auditorium {
+    background-image: url("../images/scraped-images-TEMP/hero_image_scraped.webp");
     min-height: 100dvh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .parallax {
@@ -23,4 +105,36 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none !important;
+    }
+    .nav-links.open {
+        display: flex !important;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        gap: 0;
+        padding: 1rem 2rem;
+    }
+    .nav-menu-icon {
+        display: block;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: right;
+        margin: 0.5rem 0;
+    }
+    .nav-links a {
+        font-size: 1.2rem;
+        width: 100%;
+        display: block;
+        padding: 0.75rem 0;
+    }
 }
