@@ -70,6 +70,7 @@ nav {
     color: #000;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
+    display: block;
 }
 
 /* HOME */
@@ -107,7 +108,7 @@ nav {
     background-size: cover;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1240px) {
     .nav-links {
         display: none !important;
     }
