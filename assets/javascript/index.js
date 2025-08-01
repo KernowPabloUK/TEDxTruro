@@ -76,4 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.key === "ArrowLeft") showPrev();
         if (e.key === "ArrowRight") showNext();
     });
+
+    if (navigator.platform.toLowerCase().includes("ipad" || "iphone")) {
+        console.log("IOS");
+    } else { console.log(navigator.platform.toLocaleLowerCase());
+    console.log("Not a mac")}
+
+
+
+
+
 });

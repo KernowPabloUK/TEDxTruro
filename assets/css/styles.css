@@ -244,7 +244,7 @@ footer a {
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.90);
+    background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
 }
@@ -295,7 +295,7 @@ footer a {
     transform: translateX(-50%);
     color: var(--background-primary-color);
     font-size: 1.3rem;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     padding: 0.4em 1em;
     border-radius: 1em;
     z-index: 10003;
@@ -359,8 +359,13 @@ footer a {
 }
 
 @media (max-width: 767px) {
-
     #home-memorable-moments-photos {
         column-count: 1;
     }
 }
+
+/* @media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} */
