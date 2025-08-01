@@ -77,13 +77,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.key === "ArrowRight") showNext();
     });
 
-    if (navigator.platform.toLowerCase().includes("ipad" || "iphone")) {
-        console.log("IOS");
-    } else { console.log(navigator.platform.toLocaleLowerCase());
-    console.log("Not a mac")}
-
-
-
-
-
+    // Disable parallax on iPad/iPhone
+    const isIOS = /ipad|iphone/i.test(navigator.platform);
+    if (isIOS) {
+        document.querySelectorAll('.parallax').forEach(el => {
+            el.classList.remove('parallax');
+            el.style.backgroundAttachment = 'scroll';
+        });
+    }
 });
