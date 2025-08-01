@@ -76,12 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.key === "ArrowRight") showNext();
     });
 
-    // Disable parallax effect if iOS device
-    var platform = navigator.platform.toLowerCase();
-    if (platform.includes("ipad") || platform.includes("iphone")) {
-        document.querySelectorAll(".parallax").forEach((el) => {
-            el.classList.remove("parallax");
-            el.style.backgroundAttachment = "scroll";
-        });
-    }
+    // // Disable parallax effect if iOS device
+    // var platform = navigator.platform.toLowerCase();
+    // if (platform.includes("ipad") || platform.includes("iphone")) {
+    //     document.querySelectorAll(".parallax").forEach((el) => {
+    //         el.classList.remove("parallax");
+    //         el.style.backgroundAttachment = "scroll";
+    //     });
+    // }
 });
