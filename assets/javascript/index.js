@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.getElementById("nav-menu-icon");
     const navLinks = document.querySelector(".nav-links");
-    const navAnchors = document.querySelectorAll(".nav-links a");
 
     if (menuIcon && navLinks) {
         menuIcon.addEventListener("click", () => {
@@ -77,12 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.key === "ArrowRight") showNext();
     });
 
-    // Disable parallax on iPad/iPhone
-    const isIOS = /ipad|iphone/i.test(navigator.platform);
-    if (isIOS) {
-        document.querySelectorAll('.parallax').forEach(el => {
-            el.classList.remove('parallax');
-            el.style.backgroundAttachment = 'scroll';
+    // Disable parallax effect if iOS device
+    var platform = navigator.platform.toLowerCase();
+    if (platform.includes("ipad") || platform.includes("iphone")) {
+        document.querySelectorAll(".parallax").forEach((el) => {
+            el.classList.remove("parallax");
+            el.style.backgroundAttachment = "scroll";
         });
     }
 });

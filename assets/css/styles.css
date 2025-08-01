@@ -363,9 +363,3 @@ footer a {
         column-count: 1;
     }
 }
-
-/* @media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-} */
