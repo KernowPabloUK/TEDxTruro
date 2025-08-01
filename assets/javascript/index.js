@@ -102,4 +102,22 @@ document.addEventListener("DOMContentLoaded", function () {
             el.style.backgroundAttachment = "scroll";
         });
     }
+
+    // Dropdown collapsible logic
+    document.querySelectorAll('.dropdown > .dropbtn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const parent = btn.parentElement;
+            parent.classList.toggle('open');
+            document.querySelectorAll('.dropdown').forEach(d => {
+                if (d !== parent) d.classList.remove('open');
+            });
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+        }
+    });
 });

@@ -80,6 +80,36 @@ nav {
     font-weight: 800;
 }
 
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--background-primary-color);
+    min-width: 180px;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+    color: var(--tedx-logo-secondary-color);
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
 /* Home */
 
 #TEDxTruro-logo-image {
@@ -221,6 +251,13 @@ nav {
     width: 4em;
     height: auto;
     display: inline-block;
+}
+
+/* Speakers 2025 */
+#speakers-2025-landing-page {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
 }
 
 /* Parallax */
@@ -371,6 +408,12 @@ footer a {
 
     #home-memorable-moments-photos {
         column-count: 2;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        min-width: 100%;
     }
 }
 
