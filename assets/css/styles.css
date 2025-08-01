@@ -7,7 +7,7 @@
     --inter-optical-sizing: auto;
     --inter-weight: 300;
     --inter-style: normal;
-    --tedx-logo-primary-color: #EB0028;
+    --tedx-logo-primary-color: #eb0028;
     --tedx-logo-secondary-color: #000;
     --background-primary-color: #fff;
 }
@@ -108,17 +108,17 @@ nav {
     position: relative;
 }
 
-h1 {
+#image-auditorium h1 {
     color: var(--background-primary-color);
     position: absolute;
-    top: 50%;
+    top: 40%;
     margin-left: 10%;
     margin-right: 10%;
     width: calc(100% - 100px);
     font-size: 8vw;
     font-weight: 600;
     transform: translateY(-50%);
-    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 #h1-logo {
@@ -129,6 +129,61 @@ h1 {
     display: inline-block;
 }
 
+#home-about {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#home-about h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.home-about {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-collapse: separate;
+    border-spacing: 2rem 0;
+    width: 80%;
+    height: auto;
+    font-size: 1.8rem;
+}
+
+.home-about-item {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+#home-memorable-moments {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#home-memorable-moments h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 7rem;
+}
+
+#home-memorable-moments-photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#home-memorable-moments-photos {
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -136,10 +191,29 @@ h1 {
     background-size: cover;
 }
 
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--background-primary-color);
+    text-align: center;
+    padding: 2em 0;
+    z-index: 999;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--tedx-logo-secondary-color);
+    margin: 0 1.4rem;
+}
+
+/* Media Queries */
+
 @media (max-width: 1240px) {
     .nav-links {
         display: none !important;
     }
+
     .nav-links.open {
         display: flex !important;
         position: absolute;
@@ -152,18 +226,47 @@ h1 {
         gap: 0;
         padding: 1rem 2rem;
     }
+
     .nav-menu-icon {
         display: block;
     }
+
     .nav-links li {
         width: 100%;
         text-align: right;
         margin: 0.5rem 0;
     }
+
     .nav-links a {
         font-size: 1.2rem;
         width: 100%;
         display: block;
         padding: 0.75rem 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-about {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1.6rem;
+    }
+
+    .home-about-item {
+        width: 100%;
+    }
+
+    #home-memorable-moments-photos {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #home-memorable-moments-photos {
+        column-count: 1;
     }
 }
