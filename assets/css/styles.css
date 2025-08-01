@@ -80,7 +80,7 @@ nav {
     font-weight: 800;
 }
 
-/* HOME */
+/* Home */
 
 #TEDxTruro-logo-image {
     display: block;
@@ -129,6 +129,8 @@ nav {
     display: inline-block;
 }
 
+/* Home - About */
+
 #home-about {
     position: relative;
     width: 100%;
@@ -161,6 +163,8 @@ nav {
     min-width: 0;
 }
 
+/* Home - Memorable Moments */
+
 #home-memorable-moments {
     text-align: center;
     width: 100%;
@@ -185,6 +189,8 @@ nav {
     column-gap: 0;
 }
 
+/* Home - Announcements */
+
 #home-announcements {
     text-align: center;
     font-size: 3rem;
@@ -201,12 +207,16 @@ nav {
     display: inline-block;
 }
 
+/* Parallax */
+
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Footer */
 
 footer {
     left: 0;
@@ -222,6 +232,73 @@ footer a {
     text-decoration: none;
     color: var(--tedx-logo-secondary-color);
     margin: 0 1.4rem;
+}
+
+/* Slideshow Modal */
+
+.slideshow-modal {
+    display: none;
+    position: fixed;
+    z-index: 10001;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.90);
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-modal.active {
+    display: flex;
+}
+
+.slideshow-content {
+    max-width: 90vw;
+    max-height: 80vh;
+    margin: auto;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow-close,
+.slideshow-prev,
+.slideshow-next {
+    position: absolute;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    user-select: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10002;
+}
+
+.slideshow-close {
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    transform: none;
+}
+
+.slideshow-prev {
+    left: 2vw;
+}
+
+.slideshow-next {
+    right: 2vw;
+}
+
+.slideshow-counter {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--background-primary-color);
+    font-size: 1.3rem;
+    background: rgba(0,0,0,0.4);
+    padding: 0.4em 1em;
+    border-radius: 1em;
+    z-index: 10003;
 }
 
 /* Media Queries */
