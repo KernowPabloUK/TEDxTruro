@@ -144,6 +144,14 @@ nav {
     margin-top: 5rem;
 }
 
+#home-about-h2-logo {
+    width: 6em;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.5rem;
+}
+
 .home-about {
     display: flex;
     flex-direction: row;
@@ -176,6 +184,14 @@ nav {
     font-size: 2.6rem;
     margin-top: 8rem;
     margin-bottom: 5rem;
+}
+
+#home-memorable-moments-h2-logo {
+    width: 6em;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.5rem;
 }
 
 #home-memorable-moments-photos img {
