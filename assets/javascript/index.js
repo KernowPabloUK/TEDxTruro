@@ -76,6 +76,25 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.key === "ArrowRight") showNext();
     });
 
+    // Touch events for slideshow navigation
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    modal.addEventListener("touchstart", function (e) {
+        if (e.touches.length === 1) {
+            touchStartX = e.touches[0].clientX;
+        }
+    });
+
+    modal.addEventListener("touchend", function (e) {
+        touchEndX = e.changedTouches[0].clientX;
+        if (touchEndX < touchStartX - 40) {
+            showNext();
+        } else if (touchEndX > touchStartX + 40) {
+            showPrev();
+        }
+    });
+
     // Disable parallax effect if iOS device
     var platform = navigator.platform.toLowerCase();
     if (platform.includes("ipad") || platform.includes("iphone")) {
