@@ -18,21 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
-    function highlightCurrentNav() {
-        let found = false;
-        navAnchors.forEach((a) => {
-            a.classList.remove("active");
-            if (window.location.hash && a.getAttribute("href") === window.location.hash) {
-                a.classList.add("active");
-                found = true;
-            }
-        });
-        // // If no hash or no match, highlight the first link
-        // if (!found && navAnchors.length) {
-        //     navAnchors[0].classList.add("active");
-        // }
-    }
-
-    highlightCurrentNav();
 });
