@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&display=swap");
 
-/* GLOBAL */
-
+/* ===========================
+    GLOBAL VARIABLES & BASE
+    =========================== */
 :root {
     --inter-font: "Inter", sans-serif;
     --inter-optical-sizing: auto;
@@ -24,8 +25,9 @@ body {
     font-style: var(--inter-style);
 }
 
-/* NAVIGATION */
-
+/* ===========================
+    NAVIGATION
+    =========================== */
 nav {
     position: fixed;
     top: 0;
@@ -40,11 +42,9 @@ nav {
     font-size: 1.1rem;
     padding: 1rem;
 }
-
 #nav-left-icon {
     height: 50px;
 }
-
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -55,7 +55,6 @@ nav {
     padding: 1rem;
     align-items: center;
 }
-
 .nav-menu-icon {
     display: none;
     cursor: pointer;
@@ -63,7 +62,6 @@ nav {
     margin-right: 2.5rem;
     z-index: 10001;
 }
-
 .nav-links li {
     margin: 0;
     padding: 0;
@@ -75,20 +73,17 @@ nav {
     border-radius: 4px;
     display: block;
 }
-
 .nav-links a.active {
     font-weight: 800;
 }
 
-/* Dropdown styles */
+/* --- Dropdown --- */
 .dropdown {
     position: relative;
 }
-
 .dropbtn {
     cursor: pointer;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -97,7 +92,6 @@ nav {
     z-index: 1000;
     padding: 0.5rem 0;
 }
-
 .dropdown-content a {
     color: var(--tedx-logo-secondary-color);
     padding: 0.5rem 1rem;
@@ -105,13 +99,13 @@ nav {
     text-decoration: none;
     white-space: nowrap;
 }
-
 .dropdown.open .dropdown-content {
     display: block;
 }
 
-/* Home */
-
+/* ===========================
+    HOME
+    =========================== */
 #TEDxTruro-logo-image {
     display: block;
     margin-left: auto;
@@ -120,12 +114,10 @@ nav {
     width: 82%;
     object-fit: contain;
 }
-
 #home-screen-landing-page {
     height: 100dvh;
     position: relative;
 }
-
 #image-auditorium {
     background-image: url("../images/scraped-images-TEMP/hero_image_scraped.webp");
     min-height: 100dvh;
@@ -137,7 +129,6 @@ nav {
     box-sizing: border-box;
     position: relative;
 }
-
 #image-auditorium h1 {
     color: var(--background-primary-color);
     position: absolute;
@@ -150,7 +141,6 @@ nav {
     transform: translateY(-50%);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
-
 #h1-logo {
     position: relative;
     left: -2.6%;
@@ -159,21 +149,18 @@ nav {
     display: inline-block;
 }
 
-/* Home - About */
-
+/* --- Home About --- */
 #home-about {
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
 }
-
 #home-about h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-top: 5rem;
 }
-
 #home-about-h2-logo {
     width: 6em;
     height: auto;
@@ -181,7 +168,6 @@ nav {
     vertical-align: middle;
     margin-bottom: 0.5rem;
 }
-
 .home-about {
     display: flex;
     flex-direction: row;
@@ -195,27 +181,23 @@ nav {
     height: auto;
     font-size: 1.8rem;
 }
-
 .home-about-item {
     flex: 1 1 0;
     min-width: 0;
 }
 
-/* Home - Memorable Moments */
-
+/* --- Home Memorable Moments --- */
 #home-memorable-moments {
     text-align: center;
     width: 100%;
     height: auto;
 }
-
 #home-memorable-moments h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-top: 8rem;
     margin-bottom: 5rem;
 }
-
 #home-memorable-moments-h2-logo {
     width: 6em;
     height: auto;
@@ -223,45 +205,75 @@ nav {
     vertical-align: middle;
     margin-bottom: 0.5rem;
 }
-
 #home-memorable-moments-photos img {
     width: 100%;
     line-height: 1em;
 }
-
 #home-memorable-moments-photos {
     line-height: 0;
     column-count: 4;
     column-gap: 0;
 }
 
-/* Home - Announcements */
-
+/* --- Home Announcements --- */
 #home-announcements {
     text-align: center;
     font-size: 3rem;
     margin-top: 5rem;
 }
-
 #home-announcements h2 {
     font-size: 2rem;
 }
-
 #home-announcements-h2-logo {
     width: 4em;
     height: auto;
     display: inline-block;
 }
 
-/* Speakers 2025 */
+/* ===========================
+    SPEAKERS 2025
+    =========================== */
 #speakers-2025-landing-page {
     text-align: center;
     margin-top: 10rem;
     font-size: 2rem;
 }
+.speaker-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.speaker-row .speaker-img {
+    flex: 0 0 500px;
+    max-width: 500px;
+}
+.speaker-row .speaker-img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.speaker-row .speaker-info {
+    flex: 1;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.speaker-row .speaker-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+.speaker-row.reverse {
+    flex-direction: row-reverse;
+    align-items: center;
+}
 
-/* Parallax */
-
+/* ===========================
+    PARALLAX
+    =========================== */
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -269,8 +281,9 @@ nav {
     background-size: cover;
 }
 
-/* Footer */
-
+/* ===========================
+    FOOTER
+    =========================== */
 footer {
     left: 0;
     bottom: 0;
@@ -280,15 +293,15 @@ footer {
     padding: 2em 0;
     z-index: 999;
 }
-
 footer a {
     text-decoration: none;
     color: var(--tedx-logo-secondary-color);
     margin: 0 1.4rem;
 }
 
-/* Slideshow Modal */
-
+/* ===========================
+    SLIDESHOW MODAL
+    =========================== */
 .slideshow-modal {
     display: none;
     position: fixed;
@@ -301,18 +314,15 @@ footer a {
     justify-content: center;
     align-items: center;
 }
-
 .slideshow-modal.active {
     display: flex;
 }
-
 .slideshow-content {
     max-width: 90vw;
     max-height: 80vh;
     margin: auto;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
 }
-
 .slideshow-close,
 .slideshow-prev,
 .slideshow-next {
@@ -325,22 +335,18 @@ footer a {
     transform: translateY(-50%);
     z-index: 10002;
 }
-
 .slideshow-close {
     top: 2rem;
     right: 2rem;
     font-size: 3rem;
     transform: none;
 }
-
 .slideshow-prev {
     left: 2vw;
 }
-
 .slideshow-next {
     right: 2vw;
 }
-
 .slideshow-counter {
     position: absolute;
     bottom: 2rem;
@@ -354,13 +360,28 @@ footer a {
     z-index: 10003;
 }
 
-/* Media Queries */
+/* ===========================
+    MEDIA QUERIES
+    =========================== */
 
+/* --- Desktop Speaker Layout --- */
+@media (min-width: 901px) {
+    #speakers-2025-landing-page {
+        margin-left: 8vw;
+        margin-right: 8vw;
+        text-align: left;
+    }
+    .speaker-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* --- Navigation Responsive --- */
 @media (max-width: 1240px) {
     .nav-links {
         display: none !important;
     }
-
     .nav-links.open {
         display: flex !important;
         position: absolute;
@@ -373,17 +394,14 @@ footer a {
         gap: 0;
         padding: 1rem 2rem;
     }
-
     .nav-menu-icon {
         display: block;
     }
-
     .nav-links li {
         width: 100%;
         text-align: right;
         margin: 0.5rem 0;
     }
-
     .nav-links a {
         font-size: 1.2rem;
         width: 100%;
@@ -392,6 +410,19 @@ footer a {
     }
 }
 
+/* --- Speaker Image/Info Responsive --- */
+@media (max-width: 1240px) and (min-width: 901px),
+    (max-width: 1440px) and (min-width: 901px) {
+    .speaker-row .speaker-img {
+        flex: 0 0 380px;
+        max-width: 380px;
+    }
+    .speaker-row .speaker-info {
+        font-size: 0.9rem;
+    }
+}
+
+/* --- Tablet/Mobile Layouts --- */
 @media (max-width: 900px) {
     .home-about {
         flex-direction: column;
@@ -401,22 +432,39 @@ footer a {
         margin-right: 0;
         padding: 0 1.6rem;
     }
-
     .home-about-item {
         width: 100%;
     }
-
     #home-memorable-moments-photos {
         column-count: 2;
     }
-
     .dropdown-content {
         position: static;
         box-shadow: none;
         min-width: 100%;
     }
+    .speaker-row,
+    .speaker-row.reverse {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .speaker-row .speaker-img,
+    .speaker-row.reverse .speaker-img {
+        max-width: 100%;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .speaker-row .speaker-info {
+        font-size: 1.05rem;
+        margin-left: 2.6vw;
+        margin-right: 2.6vw;
+    }
+    .speaker-row .speaker-info h2 {
+        font-size: 1.1rem;
+    }
 }
 
+/* --- Small Mobile --- */
 @media (max-width: 767px) {
     #home-memorable-moments-photos {
         column-count: 1;
