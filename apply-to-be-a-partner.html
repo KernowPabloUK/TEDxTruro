@@ -33,7 +33,6 @@
 
 <body>
     <div>
-
         <nav id="nav">
             <a href="index.html"><img id="nav-left-icon" src="./assets/images/logo-images/logo-black.png"
                     alt="TEDxTruro Logo"></a>
@@ -46,62 +45,82 @@
                     <a href="#" class="dropbtn active">COMMUNITY</a>
                     <div class="dropdown-content">
                         <a href="speakers-2025.html">2025 Speakers</a>
-                        <a href="partners-2025.html" class="active">2025 Partners</a>
+                        <a href="partners-2025.html">2025 Partners</a>
                     </div>
                 </li>
-                <li><a href="apply-to-be-a-partner.html">APPLY TO BE A PARTNER</a></li>
+                <li><a href="apply-to-be-a-partner.html" class="active">APPLY TO BE A PARTNER</a></li>
                 <li><a href="#events">EVENTS</a></li>
                 <li><a href="#talks">TALKS</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT OUR TEAM</a></li>
             </ul>
         </nav>
-        <div id="partners-2025-landing-page">
-            <h1>Partners <img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
-                    alt="TEDxTruro Logo"> 2025</h1>
-            <div class="partner-row">
-                <div class="partner-img">
-                    <a href="https://www.craigfearn.com/" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-craig-fearn.webp" alt="Craig Fearn">
-                    </a>
-                </div>
-                <div class="partner-img">
-                    <a href="https://alterarchitects.co.uk/" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-alter.webp" alt="Alter">
-                    </a>
-                </div>
-                <div class="partner-img">
-                    <a href="https://www.truroschool.com/" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-truro-school.webp" alt="Truro School">
-                    </a>
-                </div>
-                <div class="partner-img">
-                    <a href="https://www.lanstudios.co.uk" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-lan-studios.webp" alt="LAN Studios">
-                    </a>
-                </div>
-                <div class="partner-img">
-                    <a href="https://bullandwolf.com/" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-bull-and-wolf.webp" alt="Bull & Wolf">
-                    </a>
-                </div>
-                <div class="partner-img">
-                    <a href="https://www.athomecornwall.co.uk/" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-at-home-cornwall.webp"
-                            alt="At Home Cornwall">
-                    </a>
-                </div>
-                <div class="partner-img">
-                    <a href="https://boosters.co.uk/" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-boosters.webp" alt="Boosters">
-                    </a>
-                </div>
-                <div class="partner-img">
-                    <a href="https://www.clareconnieshepherd.com/" target="_blank" rel="noopener">
-                        <img src="./assets/images/scraped-images-TEMP/partners-clare-connie.webp"
-                            alt="Clare Connie Shepherd Design">
-                    </a>
-                </div>
+        <div id="apply-to-be-a-partner-landing-page">
+            <h1>Partnering with <img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
+                    alt="TEDxTruro Logo"> 2026</h1>
+            <div>
+                <h3>Partnering with <img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
+                        alt="TEDxTruro Logo"> can offer a range of benefits for your organisation.</h3>
+                <h4>
+                    Brand association and reputation boost
+                </h4>
+                <p>
+                    TEDx is a globally recognised brand associated with innovation, inspiration, and powerful ideas. By
+                    partnering with a TEDx event, you align your brand with these positive attributes, enhancing your
+                    reputation and credibility.
+                </p>
+                <h4>
+                    Increased brand awareness and reach
+                </h4>
+                <p>
+                    TEDxTruro attracts a large and engaged audience, both physically at the event and online through
+                    live streams and recordings. Partnering with TEDx allows you to reach a wider audience and increase
+                    brand awareness.
+                </p>
+                <h4>
+                    Networking opportunities
+                </h4>
+                <p>
+                    TEDxTruro brings together a diverse group of influential people, including speakers, attendees, and
+                    organisers. Partnering with TEDxTruro provides valuable networking opportunities to connect with
+                    potential customers, partners, and collaborators.
+                </p>
+                <h4>
+                    Exposure to innovative ideas
+                </h4>
+                <p>
+                    TEDx talks cover a wide range of topics, often featuring cutting-edge ideas and thought leaders. By
+                    partnering with TEDxTruro, you gain exposure to these innovative ideas, which can inspire creativity
+                    and innovation within your own organisation.
+                </p>
+                <h4>
+                    Media coverage and PR
+                </h4>
+                <p>
+                    TEDxTruro often generates media attention. Partnering with a TEDx event can lead to media coverage
+                    and positive press mentions, further enhancing your brand awareness and reputation.
+                </p>
+                <h4>
+                    Community engagement
+                </h4>
+                <p>
+                    TEDxTruro is rooted in the local community. Partnering with TEDxTruro allows you to demonstrate your
+                    commitment to the community and build stronger relationships with local stakeholders.
+                </p>
+            </div>
+            <div>
+                <form id="partner-contact-form" class="contact-form" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
     </div>
