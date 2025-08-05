@@ -423,6 +423,52 @@ footer a {
 }
 
 /* ===========================
+    CONTACT FORM
+    =========================== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.2rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form button[type="submit"] {
+    align-self: center;
+    padding: 0.7rem 2.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    background: #e62b1e;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #b71c12;
+}
+
+/* ===========================
     MEDIA QUERIES
     =========================== */
 

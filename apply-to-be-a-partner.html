@@ -109,15 +109,15 @@
                 </p>
             </div>
             <div>
-                <form id="partner-contact-form" class="contact-form" action="#" method="post">
-                    <label for="name">Name:</label>
+                <form id="partner-contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="1254fb77-6600-4070-8d52-4b75ebfc54ea">
+                    <label for="name">Name </label>
                     <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
+                    <label for="email">Email * </label>
                     <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
+                    <label for="message">Message *</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                     <button type="submit">Send</button>
                 </form>
