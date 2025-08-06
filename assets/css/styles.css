@@ -457,6 +457,17 @@ nav {
 }
 
 /* ===========================
+    CONTACT
+    =========================== */
+#contact-landing-page {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+/* ===========================
     PARALLAX
     =========================== */
 .parallax {
