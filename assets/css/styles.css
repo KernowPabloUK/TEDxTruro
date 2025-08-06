@@ -430,6 +430,33 @@ nav {
 }
 
 /* ===========================
+    ABOUT
+    =========================== */
+#about-contact-form h2 {
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2rem;
+}
+
+#about-landing-page {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#about-landing-page h4,
+#about-landing-page p,
+#about-landing-page ul > li {
+    text-align: start;
+}
+
+#about-landing-page p {
+    margin-bottom: 2.6rem;
+}
+
+/* ===========================
     PARALLAX
     =========================== */
 .parallax {
