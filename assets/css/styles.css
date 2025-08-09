@@ -344,6 +344,29 @@ nav {
 }
 
 /* ===========================
+    FORM SUCCESS - - REDIRECT
+    =========================== */
+#form-success-landing-page {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#form-success-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#form-success-footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ===========================
     EVENTS
     =========================== */
 
