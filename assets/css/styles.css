@@ -240,6 +240,9 @@ nav {
     margin-top: 10rem;
     font-size: 2rem;
 }
+#speakers-2025-landing-page h1 {
+    text-align: center;
+}
 .speaker-row {
     display: flex;
     align-items: center;
@@ -640,7 +643,7 @@ footer a {
         max-width: 592px;
     }
     .talks-2025-row .talks-2025-video {
-        order: 2; 
+        order: 2;
         width: 100%;
         max-width: 592px;
     }
