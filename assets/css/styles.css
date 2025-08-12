@@ -281,10 +281,15 @@ nav {
 /* ===========================
     PARTNERS 2025
     =========================== */
-#partners-2025-landing-page {
+#partners-landing-page {
     text-align: center;
     margin-top: 10rem;
     font-size: 2rem;
+}
+
+#partners-landing-page h2 a{
+    text-decoration: none;
+    color: var(--tedx-logo-secondary-color);
 }
 
 .partner-row {
@@ -782,7 +787,7 @@ footer a {
 /* --- Extra Small Mobile --- */
 @media (max-width: 500px) {
     #speakers-landing-page h1 img,
-    #partners-2025-landing-page h1 img,
+    #partners-landing-page h1 img,
     #apply-to-be-a-partner-landing-page img,
     #events-landing-page img,
     #home-about-h2-logo {
@@ -791,7 +796,7 @@ footer a {
         vertical-align: middle;
     }
     #speakers-landing-page h1,
-    #partners-2025-landing-page h1,
+    #partners-landing-page h1,
     #apply-to-be-a-partner-landing-page h1,
     #events-landing-page h1 {
         font-size: 1.3rem;
