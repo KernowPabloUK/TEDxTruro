@@ -235,12 +235,12 @@ nav {
 /* ===========================
     SPEAKERS 2025
     =========================== */
-#speakers-2025-landing-page {
+#speakers-landing-page {
     text-align: center;
     margin-top: 10rem;
     font-size: 2rem;
 }
-#speakers-2025-landing-page h1 {
+#speakers-landing-page h1 {
     text-align: center;
 }
 .speaker-row {
@@ -634,7 +634,7 @@ footer a {
 
 /* --- Desktop Speaker Layout --- */
 @media (min-width: 901px) {
-    #speakers-2025-landing-page {
+    #speakers-landing-page {
         margin-left: 8vw;
         margin-right: 8vw;
         text-align: left;
@@ -781,7 +781,7 @@ footer a {
 
 /* --- Extra Small Mobile --- */
 @media (max-width: 500px) {
-    #speakers-2025-landing-page h1 img,
+    #speakers-landing-page h1 img,
     #partners-2025-landing-page h1 img,
     #apply-to-be-a-partner-landing-page img,
     #events-landing-page img,
@@ -790,7 +790,7 @@ footer a {
         height: auto;
         vertical-align: middle;
     }
-    #speakers-2025-landing-page h1,
+    #speakers-landing-page h1,
     #partners-2025-landing-page h1,
     #apply-to-be-a-partner-landing-page h1,
     #events-landing-page h1 {
