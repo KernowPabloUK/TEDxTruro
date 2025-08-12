@@ -118,7 +118,7 @@ nav {
     height: 100dvh;
     position: relative;
 }
-#image-auditorium {
+#hero-image {
     background-image: url("../images/scraped-images-TEMP/hero_image_scraped.webp");
     min-height: 100dvh;
     width: 100%;
@@ -129,7 +129,7 @@ nav {
     box-sizing: border-box;
     position: relative;
 }
-#image-auditorium h1 {
+#hero-image h1 {
     color: var(--background-primary-color);
     position: absolute;
     top: 40%;
@@ -287,7 +287,7 @@ nav {
     font-size: 2rem;
 }
 
-#partners-landing-page h2 a{
+#partners-landing-page h2 a {
     text-decoration: none;
     color: var(--tedx-logo-secondary-color);
 }
@@ -321,6 +321,26 @@ nav {
 /* ===========================
     APPLY TO BE A PARTNER 2026
     =========================== */
+#apply-to-be-a-partner-landing-page #hero-image {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("../images/scraped-images-TEMP/memorable-moments-9.webp");
+}
+
+#hero-image h3 {
+    color: var(--background-primary-color);
+    position: absolute;
+    top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: calc(100% - 100px);
+    font-size: 4vw;
+    font-weight: 600;
+    transform: translateY(-50%);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
 #apply-to-be-a-partner-landing-page {
     text-align: center;
     margin-top: 10rem;
@@ -335,16 +355,50 @@ nav {
 #apply-to-be-a-partner-landing-page h3,
 #apply-to-be-a-partner-landing-page h4,
 #apply-to-be-a-partner-landing-page p,
-#apply-to-be-a-partner-landing-page div {
+#apply-to-be-a-partner-landing-page #partner-apply-div {
     text-align: left;
     margin-left: 3vw;
     margin-right: 3vw;
+}
+
+#partner-apply-div {
+    margin-top: 2.8rem;
 }
 
 #apply-to-be-a-partner-form h2 {
     text-align: center;
     margin-top: 6rem;
     font-size: 2rem;
+}
+
+#pdf-download-div {
+    margin-top: 4.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#download-tedx-pdf {
+    align-self: center;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    border: none;
+    background: #e62b1e;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+}
+
+#download-tedx-pdf:hover {
+    background: #b71c12;
+}
+
+#download-tedx-pdf a {
+    text-decoration: none;
+    color: var(--background-primary-color);
 }
 
 /* ===========================

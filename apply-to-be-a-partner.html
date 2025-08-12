@@ -58,12 +58,13 @@
         <div id="apply-to-be-a-partner-landing-page">
             <h1>Partnering with<img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
                     alt="TEDxTruro Logo"></h1>
-            <div>
-                <h3>Partnering with<img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
-                        alt="TEDxTruro Logo">can offer a range of benefits for your organisation.</h3>
-                <h4>
-                    Brand association and reputation boost
-                </h4>
+            <div id="hero-image" class="parallax">
+                <h3>
+                    Elevate your brand with<img id="home-about-h2-logo" src="./assets/images/logo-images/logo-white.png"
+                        alt="TEDxTruro Logo">
+                </h3>
+            </div>
+            <div id="partner-apply-div">
                 <p>
                     TEDx is a globally recognised brand associated with innovation, inspiration, and powerful ideas. By
                     partnering with a TEDx event, you align your brand with these positive attributes, enhancing your
@@ -108,10 +109,18 @@
                     commitment to the community and build stronger relationships with local stakeholders.
                 </p>
             </div>
+            <div id="pdf-download-div">
+                <button id="download-tedx-pdf">
+                    <a href="./assets/pdfs/TEDxTruro_Partnership_Packages_Brochure_early_bird.pdf" download>
+                        Download the TEDx Partner Pack PDF
+                    </a>
+                </button>
+            </div>
             <div id="apply-to-be-a-partner-form">
-                <h2>Contact us to Partner with <img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
-                        alt="TEDxTruro Logo"></h2>
-                <form id="partner-contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <h2>Contact us to Partner with <img id="home-about-h2-logo"
+                        src="./assets/images/logo-images/logo-black.png" alt="TEDxTruro Logo"></h2>
+                <form id="partner-contact-form" class="contact-form" action="https://api.web3forms.com/submit"
+                    method="POST">
                     <input type="hidden" name="access_key" value="1254fb77-6600-4070-8d52-4b75ebfc54ea">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required>
@@ -121,7 +130,8 @@
                     <textarea id="message" name="message" rows="5" required></textarea>
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <button type="submit">Send</button>
-                    <input type="hidden" name="redirect" value="https://kernowpablouk.github.io/TEDxTruro/form-success.html">
+                    <input type="hidden" name="redirect"
+                        value="https://kernowpablouk.github.io/TEDxTruro/form-success.html">
                 </form>
             </div>
         </div>
