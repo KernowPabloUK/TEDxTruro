@@ -164,8 +164,6 @@ nav {
 #home-about-h2-logo {
     width: 6em;
     height: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 0.5rem;
@@ -463,6 +461,40 @@ nav {
     font-weight: 600;
     transform: translateY(-50%);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#events-about {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#events-about h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 5rem;
+}
+.events-about {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: auto;
+    font-size: 1.8rem;
+}
+
+.events-about-item strong{
+font-weight: 600;
+}
+
+#events-booking,
+#events-speakers {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 5rem;
+}
+#events-booking h2,
+#events-speakers h2 {
+    font-size: 3rem;
 }
 
 /* ===========================
@@ -815,12 +847,18 @@ footer a {
         height: auto;
         object-fit: contain;
     }
+    #event-details {
+        font-size: 1.6rem;
+    }
 }
 
 /* --- Small Mobile --- */
 @media (max-width: 767px) {
     #home-memorable-moments-photos {
         column-count: 1;
+    }
+        #event-details {
+        font-size: 1.2rem;
     }
 }
 
