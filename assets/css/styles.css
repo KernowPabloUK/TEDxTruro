@@ -482,8 +482,8 @@ nav {
     font-size: 1.8rem;
 }
 
-.events-about-item strong{
-font-weight: 600;
+.events-about-item strong {
+    font-weight: 600;
 }
 
 #events-booking,
@@ -495,6 +495,22 @@ font-weight: 600;
 #events-booking h2,
 #events-speakers h2 {
     font-size: 3rem;
+}
+
+#events-map {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#events-map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    display: block;
 }
 
 /* ===========================
@@ -857,7 +873,7 @@ footer a {
     #home-memorable-moments-photos {
         column-count: 1;
     }
-        #event-details {
+    #event-details {
         font-size: 1.2rem;
     }
 }
