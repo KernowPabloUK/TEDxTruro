@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div id="home">
+    <div>
         <nav id="nav">
             <a href="index.html"><img id="nav-left-icon" src="./assets/images/logo-images/logo-black.png"
                     alt="TEDxTruro Logo"></a>
@@ -45,8 +45,8 @@
                 <li class="dropdown">
                     <a href="#" class="dropbtn">COMMUNITY</a>
                     <div class="dropdown-content">
-                        <a href="speakers.html">Speakers</a>
-                        <a href="partners.html">Partners</a>
+                        <a href="speakers-2025.html">2025 Speakers</a>
+                        <a href="partners-2025.html">2025 Partners</a>
                     </div>
                 </li>
                 <li><a href="events.html" class="active">EVENTS</a></li>
@@ -55,90 +55,57 @@
                 <li><a href="contact.html">CONTACT OUR TEAM</a></li>
             </ul>
         </nav>
-        <div id="events-image" class="parallax">
-            <h1>
-                The Power of Creativity
-            </h1>
-            <br>
-            <h2>Monday xth Month 2026</h2>
-        </div>
-        <div id="events-about">
-            <div class="events-about">
-                <div class="events-about-item">
-                    <h3>The Power of Creativity</h3>
-                    <p><img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
-                            alt="TEDxTruro Logo">invites you to explore how creative thinking drives change, innovation,
-                        and resilience
-                        within Cornwall. Whether expressed through art, science, entrepreneurship, education, or
-                        community action, creativity transforms challenges into opportunities.
-                    </p>
-                    </div>
-                    <div class="events-about-item">
-                        <p>At<img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
-                                alt="TEDxTruro Logo">2026, we'll bring together inspiring voices and groundbreaking
-                            ideas to
-                            illuminate how these forces shape our lives, our communities, and our world. Through
-                            powerful talks and shared experiences, we'll explore how creativity sparks exploration,
-                            fosters transformation, and paves the way for bold futures.</p>
-                    </div>
-                    <div class="events-about-item">
-                        <p>Be part of this extraordinary event as we uncover stories, innovations, and perspectives that
-                            remind us of the limitless potential of human thought and creativity.</p>
-                    </div>
-                    <div class="events-about-item">
-                        <p>Save the date and join us for<img id="home-about-h2-logo"
-                                src="./assets/images/logo-images/logo-black.png" alt="TEDxTruro Logo">2026.
-                            <br>
-                            Let's spark something incredible.
-                        </p>
-                    </div>
-                    <br>
-                    <div id="event-details" class="events-about-item">
-                        <p><strong>Date:</strong> Monday xth Month 2026
-                            <br>
-                            <strong>Location:</strong> Truro School, Trennick Lane, Truro, TR1 1TH
-                            <br>
-                            <strong>Time:</strong> 1-5 pm
-                        </p>
-                    </div>
-            <div id="events-map">
-                <iframe
-                    src="https://www.google.com/maps?q=Truro+School,+Trennick+Lane,+Truro,+TR1+1TH&output=embed"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Truro School Location"></iframe>
-            </div>
+        <div id="events-landing-page">
+            <h1><img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png" alt="TEDxTruro Logo">
+                Events</h1>
+            <div id="events">
+                <div id="event-link-future" class="event-link">
+                    <a href="events-future.html">
+                        <img id="event-img" src="./assets/images/scraped-images-TEMP/memorable-moments-11.webp"
+                            alt="Event">
+                    </a>
+                    <a href="events-future.html">
+                        <img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
+                            alt="TEDxTruro Logo">2026 event details coming soon
+                    </a>
+                </div>
+                <div class="event-link">
+                    <a href="https://www.ted.com/tedx/events/60779" target="_blank" rel="noopener">
+                        <img id="event-img" src="./assets/images/scraped-images-TEMP/memorable-moments-10.webp"
+                            alt="Event">
+                    </a>
+                    <a href="https://www.ted.com/tedx/events/60779" target="_blank" rel="noopener">
+                        <img id="home-about-h2-logo" src="./assets/images/logo-images/logo-black.png"
+                            alt="TEDxTruro Logo">2025 - SOLD OUT
+                    </a>
                 </div>
             </div>
-            <div id="events-booking">
-                <h2>Secure you seat</h2>
-                <p>
-                    Keep an eye out for tickets being released soon
-                </p>
-            </div>
-            <div id="events-speakers">
-                <h2>2026 Speakers</h2>
-                <p>
-                    Speakers will be announced shortly
-                </p>
-            </div>
-            <footer>
-                This independent TEDx event is operated under license from TED.
-                <br>
-                <br>
-                <a href="#talks">Talks</a>
-                <a href="https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy" target="_blank"
-                    rel="noopener">Privacy Policy</a>
-                <br>
-                <br>
-                <br>
-                <a href="https://www.calculated-code.com" target="_blank" rel="noopener">Site built by
-                    calculatedCode</a>
-            </footer>
+        </div>
+    </div>
 
-            <script src="https://kit.fontawesome.com/8669560caa.js" crossorigin="anonymous"></script>
-            <script src="./assets/javascript/index.js"></script>
+    <div id="slideshow-modal" class="slideshow-modal" style="display:none;">
+        <span class="slideshow-close">&times;</span>
+        <img class="slideshow-content" id="slideshow-img" src="" alt="">
+        <span class="slideshow-prev">&#10094;</span>
+        <span class="slideshow-next">&#10095;</span>
+    </div>
+
+    <footer>
+        This independent TEDx event is operated under license from TED.
+        <br>
+        <br>
+        <a href="#talks">Talks</a>
+        <a href="https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy" target="_blank"
+            rel="noopener">Privacy Policy</a>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.calculated-code.com" target="_blank" rel="noopener">Site built by
+            calculatedCode</a>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8669560caa.js" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/index.js"></script>
 </body>
 
 </html>

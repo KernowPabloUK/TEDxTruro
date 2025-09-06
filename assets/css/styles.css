@@ -426,6 +426,61 @@ nav {
     EVENTS
     =========================== */
 
+#events-landing-page {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+}
+
+#events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.event-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+.event-link a {
+    text-decoration: none;
+    color: var(--tedx-logo-secondary-color);
+}
+
+#event-img {
+    width: 40vw;
+    max-width: 40vh;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#event-link-future {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+/* ===========================
+    EVENTS - FUTURE
+    =========================== */
+
 #events-image {
     background-image: url("../images/scraped-images-TEMP/memorable-moments-11.webp");
     min-height: 100dvh;
@@ -512,6 +567,7 @@ nav {
     border: 0;
     display: block;
 }
+
 
 /* ===========================
     TALKS 2025
@@ -876,6 +932,10 @@ footer a {
     #event-details {
         font-size: 1.2rem;
     }
+    .event-link a {
+        margin-right: 2rem;
+        font-size: 1.4rem;
+    }
 }
 
 /* --- Extra Small Mobile --- */
@@ -895,5 +955,8 @@ footer a {
     #events-landing-page h1 {
         font-size: 1.3rem;
         word-break: break-word;
+    }
+        .event-link a {
+        font-size: 1rem;
     }
 }
