@@ -25,6 +25,24 @@ body {
     font-style: var(--inter-style);
 }
 
+.action-button {
+    align-self: center;
+    padding: 0.7rem 2.2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    background: #e62b1e;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    background: #b71c12;
+}
+
 /* ===========================
     NAVIGATION
     =========================== */
@@ -132,7 +150,7 @@ nav {
 #hero-image h1 {
     color: var(--background-primary-color);
     position: absolute;
-    top: 40%;
+    top: 30%;
     margin-left: 10%;
     margin-right: 10%;
     width: calc(100% - 100px);
@@ -141,12 +159,24 @@ nav {
     transform: translateY(-50%);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
-#h1-logo {
-    position: relative;
-    left: -2.6%;
-    width: 4em;
-    height: auto;
-    display: inline-block;
+
+#hero-image h2 {
+    color: var(--background-primary-color);
+    position: absolute;
+    top: 50%;
+    margin-left: 11%;
+    margin-right: 10%;
+    width: calc(100% - 100px);
+    font-size: 4.2vw;
+    transform: translateY(-50%);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#find-out-more-div {
+    position: absolute;
+    top: 85%;
+    margin-left: 11%;
+    margin-right: 10%;
 }
 
 /* --- Home About --- */
@@ -186,6 +216,29 @@ nav {
     min-width: 0;
 }
 
+/* --- Home Announcements --- */
+#home-announcements {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: auto;
+    font-size: 1.8rem;
+}
+#home-announcements h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+#home-announcements-h2-logo {
+    width: 6em;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.5rem;
+}
+
 /* --- Home Memorable Moments --- */
 #home-memorable-moments {
     text-align: center;
@@ -213,21 +266,6 @@ nav {
     line-height: 0;
     column-count: 4;
     column-gap: 0;
-}
-
-/* --- Home Announcements --- */
-#home-announcements {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 5rem;
-}
-#home-announcements h2 {
-    font-size: 2rem;
-}
-#home-announcements-h2-logo {
-    width: 4em;
-    height: auto;
-    display: inline-block;
 }
 
 /* ===========================
@@ -377,23 +415,6 @@ nav {
     width: 100%;
 }
 
-#download-tedx-pdf {
-    align-self: center;
-    padding: 0.7rem 1rem;
-    font-size: 1.2rem;
-    border-radius: 6px;
-    border: none;
-    background: #e62b1e;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: background 0.2s;
-}
-
-#download-tedx-pdf:hover {
-    background: #b71c12;
-}
-
 #download-tedx-pdf a {
     text-decoration: none;
     color: var(--background-primary-color);
@@ -475,7 +496,6 @@ nav {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-
 
 /* ===========================
     EVENTS - FUTURE
@@ -568,7 +588,6 @@ nav {
     display: block;
 }
 
-
 /* ===========================
     TALKS 2025
     =========================== */
@@ -593,15 +612,28 @@ nav {
 .talks-2025-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 2rem;
     margin-bottom: 1.6rem;
     margin-top: 1.6rem;
     width: 100%;
 }
 
-.talks-2025-row.reverse {
-    flex-direction: row-reverse;
+.talks-2025-info {
+    align-items: start;
+}
+
+.talks-2025-row h2,
+.talks-2025-row p {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+    margin-left: 2rem;
+    text-align: start;
+    width: 100%;
 }
 
 /* ===========================
@@ -760,23 +792,6 @@ footer a {
     box-sizing: border-box;
 }
 
-.contact-form button[type="submit"] {
-    align-self: center;
-    padding: 0.7rem 2.2rem;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    border: none;
-    background: #e62b1e;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: background 0.2s;
-}
-
-.contact-form button[type="submit"]:hover {
-    background: #b71c12;
-}
-
 /* ===========================
     MEDIA QUERIES
     =========================== */
@@ -802,8 +817,7 @@ footer a {
         padding-left: 0;
         padding-right: 0;
     }
-    .talks-2025-row,
-    .talks-2025-row.reverse {
+    .talks-2025-row {
         flex-direction: column !important;
         align-items: center;
         justify-content: center;
@@ -825,6 +839,21 @@ footer a {
         height: 305px;
         display: block;
         margin: 0 auto;
+    }
+
+    .talks-2025-info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .talks-2025-info h2,
+    .talks-2025-info p {
+        text-align: start;
+        margin-left: 0;
+    }
+
+    #talks-2025-h2 {
+        width: 95vw;
     }
 }
 
@@ -956,7 +985,7 @@ footer a {
         font-size: 1.3rem;
         word-break: break-word;
     }
-        .event-link a {
+    .event-link a {
         font-size: 1rem;
     }
 }
