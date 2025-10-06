@@ -218,18 +218,23 @@ nav {
 
 /* --- Home Announcements --- */
 #home-announcements {
+    background-color: #e0e0e0;
+}
+#home-announcements-sub {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+    padding-bottom: 1.8rem;
     height: auto;
     font-size: 1.8rem;
 }
 #home-announcements h2 {
     text-align: center;
     font-size: 2.6rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
+    padding-top: 1rem;
 }
 #home-announcements-h2-logo {
     width: 6em;
@@ -248,7 +253,7 @@ nav {
 #home-memorable-moments h2 {
     text-align: center;
     font-size: 2.6rem;
-    margin-top: 8rem;
+    margin-top: 7rem;
     margin-bottom: 5rem;
 }
 #home-memorable-moments-h2-logo {
