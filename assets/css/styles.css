@@ -137,7 +137,7 @@ nav {
     position: relative;
 }
 #hero-image {
-    background-image: url("../images/scraped-images-TEMP/hero_image_scraped.webp");
+    background-image: url("../images/scraped-images-TEMP/tedx-hero-image.webp");
     min-height: 100dvh;
     width: 100%;
     margin: 0;
@@ -157,7 +157,7 @@ nav {
     font-size: 8vw;
     font-weight: 600;
     transform: translateY(-50%);
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 #hero-image h2 {
