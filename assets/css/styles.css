@@ -979,18 +979,35 @@ footer a {
     #apply-to-be-a-partner-landing-page img,
     #events-landing-page img,
     #home-about-h2-logo {
-        max-width: 40vw;
         height: auto;
         vertical-align: middle;
+    }
+    #home-about-h2-logo {
+        max-width: 80vw;
     }
     #speakers-landing-page h1,
     #partners-landing-page h1,
     #apply-to-be-a-partner-landing-page h1,
     #events-landing-page h1 {
-        font-size: 1.3rem;
         word-break: break-word;
+    }
+    #speakers-landing-page h2,
+    #partners-landing-page h2,
+    #partner-contact-form,
+    #pdf-download-div {
+        max-width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     .event-link a {
         font-size: 1rem;
+    }
+}
+
+/* --- to show all nav links on small height screens --- */
+@media (max-height: 800px) {
+    .nav-links.open {
+        overflow-y: auto;
+        max-height: 75dvh;
     }
 }
