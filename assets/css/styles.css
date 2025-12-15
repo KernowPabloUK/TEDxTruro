@@ -284,14 +284,19 @@ nav {
 #speakers-landing-page h1 {
     text-align: center;
 }
-#speakers-apply-to-be-a-speaker {
+#speakers-apply-to-be-a-speaker-section {
+    text-align: center;
+    max-width: 90%;
+    margin: 1rem auto;
+}
+#apply-to-be-a-speaker-button {
     display: block;
     margin: 2rem auto;
     text-align: center;
     font-size: 1.4rem;
     width: fit-content;
 }
-#speakers-apply-to-be-a-speaker a {
+#apply-to-be-a-speaker-button a {
     text-decoration: none;
     color: var(--tedx-logo-secondary-color);
 }
@@ -651,6 +656,11 @@ nav {
     text-align: center;
     font-size: 1.6rem;
     margin-top: 5rem;
+}
+#events-speakers p {
+    width: 90%;
+    max-width: 1800px;
+    margin: 2rem auto;
 }
 #events-booking h2,
 #events-speakers h2 {
