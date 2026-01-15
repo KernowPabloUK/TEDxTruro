@@ -410,7 +410,9 @@ nav {
     text-align: center;
     margin-top: 10rem;
     font-size: 2rem;
-    width: 20% !important;
+    max-width: 90%;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #partners-landing-page h2 a {
