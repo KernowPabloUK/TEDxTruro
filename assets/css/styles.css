@@ -658,6 +658,8 @@ nav {
     font-size: 1.6rem;
     margin-top: 5rem;
 }
+
+#events-booking p,
 #events-speakers p {
     width: 90%;
     max-width: 1800px;
