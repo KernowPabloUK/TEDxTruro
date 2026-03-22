@@ -335,6 +335,30 @@ nav {
     align-items: center;
 }
 
+#speakers-landing-page .speakers > h2 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+
+#speakers-landing-page .speakers > h2::after {
+    content: "<";
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 300;
+}
+
+#speakers-landing-page .speakers.collapsed > h2::after {
+    content: ">";
+}
+
+#speakers-landing-page .speakers.collapsed .speaker-row {
+    display: none;
+}
+
 /* ===========================
     APPLY TO BE A SPEAKER 2026
     =========================== */

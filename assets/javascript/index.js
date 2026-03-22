@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
     // Slideshow modal logic for img elements (only if modal exists)
     const modal = document.getElementById("slideshow-modal");
     if (modal) {
@@ -122,5 +121,38 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!e.target.closest('.dropdown')) {
             document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
         }
+    });
+
+    // Speakers page collapsible year sections
+    const speakerSections = document.querySelectorAll("#speakers-landing-page .speakers");
+    speakerSections.forEach((section, index) => {
+        const heading = section.querySelector("h2");
+        if (!heading) return;
+
+        const sectionId = section.id || `speakers-section-${index + 1}`;
+        section.id = sectionId;
+        heading.setAttribute("role", "button");
+        heading.setAttribute("tabindex", "0");
+        heading.setAttribute("aria-controls", sectionId);
+
+        const setExpanded = (isExpanded) => {
+            section.classList.toggle("collapsed", !isExpanded);
+            heading.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+        };
+
+        setExpanded(index === 0);
+
+        const toggleSection = () => {
+            const isExpanded = heading.getAttribute("aria-expanded") === "true";
+            setExpanded(!isExpanded);
+        };
+
+        heading.addEventListener("click", toggleSection);
+        heading.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                toggleSection();
+            }
+        });
     });
 });
