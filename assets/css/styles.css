@@ -717,6 +717,14 @@ nav {
     display: block;
 }
 
+#events-speakers .speaker-row .speaker-info h2, h3 {
+    margin-top: 0 !important;
+}
+
+#events-speakers .speaker-row .speaker-info p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0 !important;
+}
 /* ===========================
     TALKS 2025
     =========================== */
