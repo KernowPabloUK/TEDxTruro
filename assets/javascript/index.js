@@ -124,12 +124,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Speakers page collapsible year sections
-    const speakerSections = document.querySelectorAll("#speakers-landing-page .speakers");
-    speakerSections.forEach((section, index) => {
-        const heading = section.querySelector("h2");
-        if (!heading) return;
+    // Collapsible helper used by speakers and partners
+    function setUpCollapsibleSection(heading, section, isExpandedDefault) {
+        if (!heading || !section) return;
 
-        const sectionId = section.id || `speakers-section-${index + 1}`;
+        const sectionId = section.id || `section-${Math.random().toString(36).slice(2, 8)}`;
         section.id = sectionId;
         heading.setAttribute("role", "button");
         heading.setAttribute("tabindex", "0");
@@ -137,10 +136,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const setExpanded = (isExpanded) => {
             section.classList.toggle("collapsed", !isExpanded);
+            heading.classList.toggle("collapsed", !isExpanded);
             heading.setAttribute("aria-expanded", isExpanded ? "true" : "false");
         };
 
-        setExpanded(index === 0);
+        setExpanded(Boolean(isExpandedDefault));
 
         const toggleSection = () => {
             const isExpanded = heading.getAttribute("aria-expanded") === "true";
@@ -154,5 +154,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 toggleSection();
             }
         });
+    }
+
+    // Speakers page collapsible year sections
+    const speakerSections = document.querySelectorAll("#speakers-landing-page .speakers");
+    speakerSections.forEach((section, index) => {
+        const heading = section.querySelector("h2");
+        if (!heading) return;
+        setUpCollapsibleSection(heading, section, index === 0);
     });
+
+    // Partners page: make the 2025 section collapsible based on its heading
+    const partnersContainer = document.getElementById("partners-landing-page");
+    if (partnersContainer) {
+        const heading = partnersContainer.querySelector("#partners-2025");
+        const section = heading ? heading.nextElementSibling : null;
+        if (heading && section && section.classList.contains("partner-section")) {
+            setUpCollapsibleSection(heading, section, true);
+        }
+    }
 });
