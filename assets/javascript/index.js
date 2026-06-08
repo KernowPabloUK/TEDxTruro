@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const heading = partnersContainer.querySelector("#partners-2025");
         const section = heading ? heading.nextElementSibling : null;
         if (heading && section && section.classList.contains("partner-section")) {
-            setUpCollapsibleSection(heading, section, true);
+            setUpCollapsibleSection(heading, section, false);
         }
     }
 });
