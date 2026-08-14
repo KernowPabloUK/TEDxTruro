@@ -173,4 +173,17 @@ document.addEventListener("DOMContentLoaded", function () {
             setUpCollapsibleSection(heading, section, false);
         }
     }
+
+    // Talks page collapsible year sections
+    const talks2026Container = document.getElementById("talks-2026-container");
+    if (talks2026Container) {
+        const heading = talks2026Container.querySelector("h2");
+        setUpCollapsibleSection(heading, talks2026Container, true);
+    }
+
+    const talks2025Container = document.getElementById("talks-2025-container");
+    if (talks2025Container) {
+        const heading = talks2025Container.querySelector("h2");
+        setUpCollapsibleSection(heading, talks2025Container, false);
+    }
 });
